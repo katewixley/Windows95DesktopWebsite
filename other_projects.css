@@ -1,0 +1,133 @@
+:root {
+    --window-width: 90vw;
+    --window-height:90vh;
+    --nav_height:37px;
+    /* Nav items */
+    --item_top:10%;
+    background:#121212;
+
+    /* Startbar */
+    --start_bar_height:40vh;
+    --start_bar_width:20vw;
+  }
+  /* Buttons and icon/images */
+.logo{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 27vh;
+    left: 30vw;
+    font-family: Tahoma;
+    font-weight: bold;
+}
+
+.icon1,.icon2,.icon3,.icon4,.icon5,.icon6{
+    width: 80px;
+    height: 70px;
+    transition: all .2s ease-in-out;
+}
+.icon1:hover, .icon2:hover, .icon3:hover, .icon4:hover, .icon5:hover, .icon6:hover{
+    transform: scale(1.1); 
+}
+.startbutton{
+    position: relative;
+    width: 80px;
+    height: 52px;
+    top: -10%;
+    transition: all .2s ease-in-out;
+}
+
+.startbutton:active + .startBarShowing{
+    display: block;
+    transform: scale(1);
+}
+
+.startbutton:hover{
+    /* transform: scale(0.8); */
+}
+
+
+/*  */
+
+
+/* Windows and frames  */
+  .outer{
+    position:absolute;
+    width:var(--window-width);
+    height:var(--window-height);
+    background-color:#068282;
+  }
+  
+  .navbar{
+    top: 89%;
+    position:relative;
+    background-color:#D4D0C7;
+    width:var(--window-size);
+    height:var(--nav_height);
+  }
+
+  .startButton{
+      position: relative;
+      width:8%;
+      height: 80%;
+      top: var(--item_top);
+      left: .7%;
+  }
+
+  .startBarShowing{
+    display: none;
+    position: relative;
+    top: -46vh;
+    width: var(--start_bar_width);
+    height: var(--start_bar_height);
+    background-color: #BEBEBE;
+    box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.75);
+    
+  }
+  .startBarBanner{
+    position: relative;
+    top: .5vh;
+    left: .5vw;
+    width: 3vw;
+    height: 39vh;
+    background-color: grey;
+  }
+
+/* Start Nav Bar icon format */
+
+  .iconsContainer{
+    position: relative;
+    display: grid;
+    top: -95%;
+    left: 17%;
+    grid-template-columns: 70px auto;
+  }
+
+  .startIcon{
+    width: 80%;
+    height: 100%;
+  }
+
+  #seperator{
+    width: 16vw;
+    height: 4%;
+    left: 1%;
+    margin-top: 27%;
+    position: relative;
+  }
+
+
+  #screen_message{
+    position: absolute;
+    display: none;
+  }
+  @media(max-width:1032px){
+
+    .outer{
+        display: none;
+    }
+    #screen_message{
+        color: red;
+        display: inline;
+    }
+  }
