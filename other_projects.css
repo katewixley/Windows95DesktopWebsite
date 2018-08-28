@@ -29,7 +29,7 @@
 .icon1:hover, .icon2:hover, .icon3:hover, .icon4:hover, .icon5:hover, .icon6:hover{
     transform: scale(1.1); 
 }
-.startbutton{
+#startbutton{
     position: relative;
     width: 80px;
     height: 52px;
@@ -37,7 +37,7 @@
     transition: all .2s ease-in-out;
 }
 
-.startbutton:active + .startBarShowing{
+#startbutton:active + .startBarShowing{
     display: block;
     transform: scale(1);
 }
@@ -66,7 +66,7 @@
     height:var(--nav_height);
   }
 
-  .startButton{
+  #startButton{
       position: relative;
       width:8%;
       height: 80%;
@@ -115,7 +115,46 @@
     margin-top: 27%;
     position: relative;
   }
+/* Error window */
 
+#ErrorMessage{
+  
+  position: absolute;
+  width: 40vw;
+  height: 20vh;
+  left: 27%;
+  top: 39%;
+}
+  #ErrorMessage img{
+    width: 40vw;
+    height: 20vh;
+    z-index: 10;
+    position: absolute;
+  }
+
+  .close{
+    width: 13px;
+    height: 10px;
+    position: relative;
+    left: 93%;
+    top: 10%;
+    z-index: 11;
+  }
+
+  .headerbar{
+    width: 90%;
+    height: 14%;
+    position: relative;
+  }
+  
+.textbox{
+  width: 78%;
+  height: 34%;
+  position: relative;
+  z-index: 10;
+  left: 14%;
+  top: 3%;
+}
 
   #screen_message{
     position: absolute;
