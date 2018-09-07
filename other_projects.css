@@ -141,7 +141,7 @@
     z-index: 11;
   }
 
-  .headerbar{
+  #ErrorMessageHeader{
     width: 90%;
     height: 14%;
     position: relative;
@@ -153,7 +153,7 @@
   position: relative;
   z-index: 10;
   left: 14%;
-  top: 3%;
+  top: 15%;
 }
 
   #screen_message{

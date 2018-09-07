@@ -4,10 +4,15 @@
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="other_projects.css">
-    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <!-- For dragging feature -->
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 
 <body>
+    <div id="App"></div>
+
     <div class="outer">
         <img class="logo" src="assets\Microsoft_Windows_logo.png" alt="microsoft logo">
         <img class="icon1" src="Assets\tile000.png" alt="icon1">
@@ -25,45 +30,56 @@
                 <div class="iconsContainer">
                     <!-- Row1 -->
                     <img class="startIcon" src="assets\tile004.png" alt="icon3">
-                    <p><u>P</u>rojects</p>
+                    <p>
+                        <u>P</u>rojects</p>
                     <!-- Row2 -->
                     <img class="startIcon" src="assets\tile003.png" alt="icon4">
-                    <p><u>D</u>ocuments</p>
+                    <p>
+                        <u>D</u>ocuments</p>
                     <!-- Row3 -->
                     <img class="startIcon" src="assets\tile005.png" alt="icon5">
-                    <p><u>S</u>ettings</p>
+                    <p>
+                        <u>S</u>ettings</p>
                     <!-- Row4 -->
                     <img class="startIcon" src="assets\findIcon.png" alt="icon5">
-                    <p><u>F</u>ind</p>
+                    <p>
+                        <u>F</u>ind</p>
                     <!-- Row5 -->
                     <img class="startIcon" src="assets\tile001.png" alt="icon6">
-                    <p><u>P</u>rojects</p>
+                    <p>
+                        <u>P</u>rojects</p>
                     <!-- Row6 Empty placeholder row -->
                     <hr id="seperator">
                     <p></p>
-                    
+
                     <!-- Row7 final row -->
                     <img class="startIcon" src="assets\tile044.png" alt="icon6">
-                    <p>Sh<u>u</u>t Down...</p>
+                    <p>
+                        Sh
+                        <u>u</u>t Down...
+                    </p>
                 </div>
             </div>
         </div>
-
-        <div id="ErrorMessage">
-            <img src="assets\ErrorWindow.png"></img>
-            <div class="close"></div>
-            <div class="headerbar"></div>
-            <div class="textbox">
-                <p class="message">The path 'C:\Program-file\JeremySouthon\work' does not exist or is not a directory</p>
+            <div id="ErrorMessage">
+                <div id="ErrorMessageHeader"></div>
+                <img src="assets\ErrorWindow.png"></img>
+                <div class="close"></div>
+                <div class="textbox">
+                    <p class="message">The path 'C:\Program-file\JeremySouthon\work' does not exist or is not a directory</p>
+                </div>
             </div>
 
-        </div>
     </div>
-    <!-- <audio data-key="65" src="/assets/sound/Windows_95_Startup.wav"></audio> -->
+
+
+    <audio class="startup_audio" data-key="65" src="C:\JeremySouthon\Projects\Windows95\assets\sound\Windows_95_Startup.wav"></audio>
+    <audio class="clicksound" data-key="60" src="C:\JeremySouthon\Projects\Windows95\assets\sound\Mouse Double.wav"></audio>
 
 
     <!-- Message for using bigger screen to view -->
     <h1 id="screen_message">Please use a bigger screen</h1>
+    <script src="index.js"></script>
 </body>
 
 </html>
