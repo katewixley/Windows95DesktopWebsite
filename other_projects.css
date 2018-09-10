@@ -20,15 +20,30 @@
     font-family: Tahoma;
     font-weight: bold;
 }
-
-.icon1,.icon2,.icon3,.icon4,.icon5,.icon6{
+.desktop_icon{
+    width: 80px;
+    height: 70px;
+    padding-left:10px;
+    padding-top:10px;
+    color: whitesmoke;
+}
+.desktop_icon p {
+  margin: 0;
+  top: -10px;
+  text-align: center;
+}
+.desktop_icon img{
     width: 80px;
     height: 70px;
     transition: all .2s ease-in-out;
 }
-.icon1:hover, .icon2:hover, .icon3:hover, .icon4:hover, .icon5:hover, .icon6:hover{
+.desktop_icon img:hover{
     transform: scale(1.1); 
 }
+.desktop_icon p{
+  position: relative;
+}
+
 #startbutton{
     position: relative;
     width: 80px;
@@ -42,9 +57,6 @@
     transform: scale(1);
 }
 
-.startbutton:hover{
-    /* transform: scale(0.8); */
-}
 
 
 /*  */
@@ -60,7 +72,7 @@
   
   .navbar{
     top: 89%;
-    position:relative;
+    position:sticky;
     background-color:#D4D0C7;
     width:var(--window-size);
     height:var(--nav_height);

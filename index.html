@@ -5,7 +5,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="other_projects.css">
     <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
-    <!-- For dragging feature -->
+    <!-- For dragging feature  -->
     <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
@@ -15,12 +15,23 @@
 
     <div class="outer">
         <img class="logo" src="assets\Microsoft_Windows_logo.png" alt="microsoft logo">
-        <img class="icon1" src="Assets\tile000.png" alt="icon1">
-        <img class="icon2" src="assets\tile001.png" alt="icon2">
-        <img class="icon3" src="assets\tile002.png" alt="icon3">
-        <img class="icon4" src="assets\tile003.png" alt="icon4">
-        <img class="icon5" src="assets\tile004.png" alt="icon5">
-        <img class="icon6" src="assets\tile005.png" alt="icon6">
+        <div class="desktop_icon">
+            <img class="icon5" src="assets\tile003.png" alt="icon5">
+            <p>Projects</p>
+        </div>
+        <div class="desktop_icon">
+            <img class="icon1" src="Assets\tile000.png" alt="icon1">
+            <p>Recycle Bin</p>
+        </div>
+        <div class="desktop_icon">
+            <img class="icon3" src="assets\tile002.png" alt="icon3">
+            <p>Contacts</p>
+        </div>
+        <div class="desktop_icon">
+            <img class="icon6" src="assets\tile004.png" alt="icon6">
+            <p>Me</p>
+        </div>
+
         <div class="navbar">
             <img id="startbutton" src="assets\startbutton.png" alt="start">
             <div class="startBarShowing">
@@ -61,15 +72,19 @@
                 </div>
             </div>
         </div>
-            <div id="ErrorMessage">
-                <div id="ErrorMessageHeader"></div>
-                <img src="assets\ErrorWindow.png"></img>
-                <div class="close"></div>
-                <div class="textbox">
-                    <p class="message">The path 'C:\Program-file\JeremySouthon\work' does not exist or is not a directory</p>
-                </div>
+        <div id="ErrorMessage">
+            <div id="ErrorMessageHeader"></div>
+            <img src="assets\ErrorWindow.png"></img>
+            <div class="close"></div>
+            <div class="textbox">
+                <p class="message">The path 'C:\Program-file\JeremySouthon\work' does not exist or is not a directory</p>
             </div>
+        </div>
 
+        <!-- <div id="me">
+            <div id="ErrorMessageHeader"></div>
+            <img src="assets\MyFacePixel.png"></img>
+        </div> -->
     </div>
 
 
